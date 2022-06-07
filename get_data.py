@@ -7,8 +7,9 @@ if __name__ == "__main__":
     webdriver_path = os.path.normpath(os.path.join(os.getcwd(), 'webdriver', webdriver_executable()))
     image_path = os.path.normpath(os.path.join(os.getcwd(), 'photos'))
 
-    #Add new search key into array ["cat","t-shirt","apple","orange","pear","fish"]
-    search_keys= ['apple','t-shirt']
+    fileobj=open("things.txt")
+    lines = fileobj.readlines()
+    search_keys =[line.strip() for line in lines
 
     #Parameters
     number_of_images = 50
