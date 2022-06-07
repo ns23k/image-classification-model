@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     fileobj=open("things.txt")
     lines = fileobj.readlines()
-    search_keys =[line.strip() for line in lines]
+    search_keys = [line.strip() for line in lines]
 
     #Parameters
     number_of_images = 50
